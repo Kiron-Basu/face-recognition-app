@@ -4,7 +4,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: grey;
+  background: rgb(100, 140, 192);
 }
 
 code {
