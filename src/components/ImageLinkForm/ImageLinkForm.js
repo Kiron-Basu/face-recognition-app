@@ -8,7 +8,7 @@ const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
             {'This app will detect faces in your pictures and blur them out'}
           </p>
           <p className="f3 white">{'Here are some example links:'}</p>
-            <p>{'http://jpninfo.com/wp-content/uploads/2015/06/Globe.jpg'}</p>
+            <p>{'https://www.cdc.gov/homepage/images/cdc-in-action/fellowships-720px.jpg'}</p>
             <p>{'http://epsassets.manchester.ac.uk/medialand/jodrell-bank/people/thumbnails/people-staff-01_700x315.jpg'}</p>  
             <p>{'https://marketplace.canva.com/MADGv_btwRg/7/thumbnail_large/canva-woman-falling-in-line-holding-each-other-MADGv_btwRg.jpg'}</p>
           
