@@ -6,7 +6,7 @@ const FaceRecognition = ({ imageUrl, box }) => {
         <div className='center ma'>
            <div className='absolute mt2'>
               <img id='inputImg' alt='' src={imageUrl} width='500px' height='auto' />
-              {console.log('box in faceRec: ', box)}
+              {console.log(box.length)}
                 {
                  box.length ? 
                     box.map( function(item, i) { 
