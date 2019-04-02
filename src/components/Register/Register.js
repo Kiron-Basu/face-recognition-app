@@ -21,7 +21,10 @@ class Register extends React.Component {
         this.setState({password: event.target.value})
     }
     onSubmitRegister = () => {
-        fetch('http://localhost:3001/register', {
+        if (this.state.name.length === 0 || this.state.email.length === 0 || this.state.password.length === 0) {
+            alert('Please complete all fields to register');
+        } else {
+            fetch('https://peaceful-retreat-87104.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -35,8 +38,9 @@ class Register extends React.Component {
             if(user) {
                 this.props.loadUser(user)
                 this.props.onRouteChange('home')
-            }
-        })
+                }
+            })
+        }
     }
         render() {
             return (
